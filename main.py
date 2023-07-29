@@ -1,5 +1,3 @@
-import os.path
-
 from src.extract_video import extract_video
 from src.parse_args import parse_program_args
 from src.startup_checks import startup_checks
@@ -12,7 +10,7 @@ print(f'source video path: "{src_video_path}"')
 
 
 # perform startup checks
-startup_checks()
+startup_checks(args)
 
 # extract video
 extract_video(src_video_path)
